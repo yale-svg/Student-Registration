@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Student Registration Form</title>
+
+  <!-- Simple & Unique Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Poppins:wght@600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="student.css" />
+</head>
+
+
+<body>
+  <div class="container">
+    <h1>Lapu-Lapu City College</h1>
+    <h2>Student Registration Form</h2>
+
+    <form id="registrationForm">
+      <div class="form-group">
+        <label for="name">Full Name:</label>
+        <input type="text" id="name" placeholder="Enter full name" required />
+      </div>
+
+      <div class="form-group">
+        <label for="email">Email:</label>
+        <input type="email" id="email" placeholder="Enter your email" required />
+      </div>
+
+      <div class="form-group">
+        <label for="age">Age:</label>
+        <input type="number" id="age" placeholder="Enter your age" required min="1" />
+      </div>
+
+      <div class="form-group">
+        <label for="gender">Gender:</label>
+        <select id="gender" required>
+          <option value="">-- Select Gender --</option>
+          <option value="Male">Male</option>
+          <option value="Female">Female</option>
+          <option value="Other">Other</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label for="course">Course:</label>
+        <select id="course" required>
+          <option value="">-- Select Course --</option>
+          <option value="Bachelor of Industrial Technology">Bachelor of Industrial Technology</option>
+          <option value="Bachelor of Science in Hospitality Management">Bachelor of Science in Hospitality Management</option>
+          <option value="Bachelor of Science in Tourism Management">Bachelor of Science in Tourism Management</option>
+          <option value="Bachelor of Secondary Education">Bachelor of Secondary Education</option>
+          <option value="Bachelor of Elementary Education">Bachelor of Elementary Education</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label for="yearLevel">Year Level:</label>
+        <select id="yearLevel" required>
+          <option value="">-- Select Year Level --</option>
+          <option value="1st Year">1st Year</option>
+          <option value="2n d Year">2nd Year</option>
+          <option value="3rd Year">3rd Year</option>
+          <option value="4th Year">4th Year</option>
+        </select>
+      </div>
+
+      <button type="submit">Register</button>
+    </form>
+
+    <h2>Registered Students</h2>
+    <table id="studentsTable">
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Email</th>
+          <th>Age</th>
+          <th>Gender</th>
+          <th>Course</th>
+          <th>Year Level</th>
+        </tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
